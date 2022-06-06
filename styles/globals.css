@@ -1,16 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+  .navBtn {
+    @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+  }
 
-* {
-  box-sizing: border-box;
+  .btn {
+    @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
+  }
+
+  .button {
+    @apply border-orangeSecondaryDarker;
+  }
+
+  .disabled-button {
+    @apply border-gray-300 border-2 rounded-md min-h-fit min-w-fit 
+    bg-gray-300 hover:cursor-not-allowed text-white font-medium flex justify-center items-center;
+  }
+
+  .fill-button {
+    @apply border-orangeSecondaryDarker border-2 rounded-md min-h-fit min-w-fit 
+    bg-orangeSecondaryDarker text-white font-medium hover:cursor-pointer hover:bg-orangeSecondaryDarkerer hover:border-orangeSecondaryDarkerer transition-all duration-150 ease-out flex justify-center items-center;
+  }
+
+  .bare-button {
+    @apply border-orangeSecondaryDarker border-2 rounded-md min-h-fit min-w-fit text-orangeSecondaryDarker font-medium hover:cursor-pointer hover:bg-orangeSecondary hover:bg-opacity-10 transition-all duration-200 ease-out  flex justify-center items-center;
+  }
 }
