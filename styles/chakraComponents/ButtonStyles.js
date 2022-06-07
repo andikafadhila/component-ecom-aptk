@@ -21,8 +21,7 @@ export const ButtonStyles = {
       border: "2px solid",
       borderColor: "orangeSecondaryDarker",
       _hover: {
-        bg: whiten("orangeSecondaryLighter", 10),
-        borderColor: whiten("orangeSecondaryLighter", 10),
+        bg: whiten("orangeSecondaryLighter", 80),
       },
     },
   },

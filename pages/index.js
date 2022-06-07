@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* <Button variant="fillCustom">hehe</Button> */}
       <Center>
-        <ProductCard />
+        <ProductCard variant="list" />
       </Center>
     </div>
   );
